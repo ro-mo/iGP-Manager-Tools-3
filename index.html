@@ -68,6 +68,21 @@ table, th, td {
   border:1px solid black;
 }
 
+a:link {color: blue}
+
+a:hover
+{
+color: red;
+text-decoration: underline
+}
+
+p.sfondogiallo:hover
+{
+background: yellow
+}
+
+
+
 </style>
 </head>
 <body>
@@ -78,27 +93,11 @@ table, th, td {
 
 <section>
   <nav>
-    <div id="hormenu">
-      <ul>
-      <li>
-      <a href="#">Menu 1</a>
-      <ul>
-      <li><a href="#">Submenu 1</a></li>
-      <li><a href="#">Submenu 1</a></li>
-      <li><a href="#">Submenu 1</a></li>
-      <li><a href="#">Submenu 1</a></li>
-      <li><a href="#">Submenu 1</a></li>
-      </ul>
-      </li>
-      </div>
-    <ul>
-      <li><a href="MDLRacingTeam-2.html">Engine Supplier</a></li>
-      <li><a href="MDLRacingTeam-3.html">Fuel Supplier</a></li>
-      <li><a href="MDLRacingTeam-4.html">Tyre Supplier</a></li>
-    </ul>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-    </ul>
+    <form name="datiAnagrafici" method="post" action="pagina2.asp">
+      <p> Nome : <input type="text" name="nome"> </p>
+      <p> Cognome : <input type="text" name="cognome"> </p>
+      <p> <input type="submit" name="invio" value="Invio Dati"> </p>
+   </form>
   </nav>
   
   <article>
@@ -108,7 +107,7 @@ table, th, td {
 
     <h3>A basic HTML table</h3>
 
-    <table style="width: 85%;">
+    <table style="width: 100%;">
       <tr>
         <th>Company</th>
         <th>Contact</th>
