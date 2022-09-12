@@ -91,7 +91,7 @@ background: yellow
 
 <section>
   <nav>
-    <form method="post" action="esegui.php">
+    <form method="get" action="esegui.php">
 
       Consumo carburante:<br>
       <input type="number" name="consumocarburante"><br>
@@ -110,6 +110,11 @@ background: yellow
       <p><button type="submit">Fatto</button>   <button type="reset">Reset</button></p>
     
     </form>
+    <?php
+    $consumocarburante = $numerodigiri = $usurasupersoft = $usurasoft = "";
+    $usuramedie = $usurahard = $litridicarburante = "";
+    $consumocarburante*$numerodigiri = $litridicarburante
+    ?>
   </nav>
   
   <article>
@@ -121,7 +126,7 @@ background: yellow
 
     <table style="width: 100%;">
       <tr>
-        <th>Company</th>
+        <th></th>
         <th>Contact</th>
         <th>Country</th>
       </tr>
@@ -136,6 +141,9 @@ background: yellow
         <td>Mexico</td>
       </tr>
     </table>
+    <?php
+      echo "$litridicarburante"
+    ?>
   </article>
 </section>
 
