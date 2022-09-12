@@ -91,18 +91,50 @@ background: yellow
 
 <section>
   <nav>
-    <form name="dati" method="post" action="pagina2.asp" >
-      <p> Consumo carburante: <input type="number" name="Consumo carburante"> </p>
-      <p> Numero di giri: <input type="number" name="Numero di giri"> </p>
+    <form method="post" action="esegui.php">
+
+      Consumo carburante:<br>
+      <input type="number" name="consumocarburante"><br>
+      Numero di giri:<br>
+      <input type="number" name="numerodigiri"><br>
       <hr></hr>
-      <p> Altezza pilota: <input type="number" name="Altezza pilota"> </p>
-      <hr></hr>
-      <p> Usura supersoft: <input type="number" name="Usura supersoft"> </p>
-      <p> Usura soft: <input type="number" name="Usura soft"> </p>
-      <p> Usura media: <input type="number" name="Usura media"> </p>
-      <p> Usura hard: <input type="number" name="Usura hard"> </p>
-      <p> <input type="submit" name="invio" value="Fatto"> </p>
-   </form>
+      Usura supersoft:<br>
+      <input type="number" name="usurasupersoft"><br>
+      Usura soft:<br>
+      <input type="number" name="usurasoft"><br>
+      Usura medie:<br>
+      <input type="number" name="usuramedie"><br>
+      Usura hard:<br>
+      <input type="number" name="usurahard"><br>
+      
+      <!-- SELECTBOX -->
+      Paese<br>
+      <select name="paese">
+      <option value="I">Italia</option>
+      <option value="E">Estero</option>
+      </select><br>
+    
+      <!-- RADIO -->
+      Sesso<br>
+      <input type="radio" name="sesso" value="M"> M<br>
+      <input type="radio" name="sesso" value="F"> F<br>
+    
+      <!-- CHECKBOX -->
+      Hobby<br>
+      <input type="checkbox" name="hobby" value="S"> Sport<br>
+      <input type="checkbox" name="hobby" value="L"> Lettura<br>
+      <input type="checkbox" name="hobby" value="C"> Cinema<br>
+      <input type="checkbox" name="hobby" value="I"> Internet<br>
+    
+      <!-- TEXTAREA -->
+      Commento<br>
+      <textarea name="commento" rows="5" cols="30"></textarea>
+      <br><br>
+    
+      <!-- SUBMIT -->
+      <button type="submit">Invia i dati</button>
+    
+    </form>
   </nav>
   
   <article>
