@@ -91,30 +91,12 @@ background: yellow
 
 <section>
   <nav>
-    <form method="get" action="esegui.php">
-
-      Consumo carburante:<br>
-      <input type="number" name="consumocarburante"><br>
-      Numero di giri:<br>
-      <input type="number" name="numerodigiri"><br>
-      <hr></hr>
-      Usura supersoft:<br>
-      <input type="number" name="usurasupersoft"><br>
-      Usura soft:<br>
-      <input type="number" name="usurasoft"><br>
-      Usura medie:<br>
-      <input type="number" name="usuramedie"><br>
-      Usura hard:<br>
-      <input type="number" name="usurahard"><br>
-      <p> </p>
-      <p><button type="submit">Fatto</button>   <button type="reset">Reset</button></p>
-    
-    </form>
-    <?php
-    $consumocarburante = $numerodigiri = $usurasupersoft = $usurasoft = "";
-    $usuramedie = $usurahard = $litridicarburante = "";
-    $consumocarburante*$numerodigiri = $litridicarburante
-    ?>
+      <input name="consumocarburante" type="number" value="Consumo carburante" size="40" maxlength="200"/>
+      <input name="numerodigiri" type="number" value="Numero di giri" size="40" maxlength="200"/>
+      <input name="usurasupersoft" type="number" value="Usura supersoft" size="40" maxlength="200"/>
+      <input name="usurasoft" type="number" value="Usura soft" size="40" maxlength="200"/>
+      <input name="usuramedie" type="number" value="Usura medie" size="40" maxlength="200"/>
+      <input name="usurahard" type="number" value="usura hard" size="40" maxlength="200"/>
   </nav>
   
   <article>
